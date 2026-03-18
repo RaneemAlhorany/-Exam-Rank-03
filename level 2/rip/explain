@@ -1,0 +1,59 @@
+
+
+// we need counter to calculte the number of parentheses to remove or keep it 
+
+// first step get the length of the string and then we need to check if the string is balanced or not
+
+
+counter = 0;
+(  --> counter ++
+
+) --> counter --
+
+if counter < 0 then we have more ) 
+than ( so we need to remove )
+
+
+
+to know how to delete the parentheses we need to use backtracking and we need to generate all the combinations of the string with the minimum number of parentheses removed and then we need to check if the string is balanced or not and if it is balanced we need to print it
+how much ( is over 
+and how much ) is over
+
+ex : ()())()
+we have : 
+( --> counter ++
+) --> counter --
+( --> counter ++
+) --> counter --
+) --> counter --  // here we have more ) than ( so we need to remove )
+( --> counter ++
+) --> counter --
+so ( is 3
+) is 4
+so we need to remove 1 ) and 0 (
+
+
+
+the tree is :
+        start
+       /     \
+   keep       remove
+
+
+/////////////////////////////////////////////////////////////////////
+
+//! nedd method to calculate the minimum number of parentheses to remove 
+// and then we need to generate all the combinations of the string 
+// with the minimum number of parentheses removed and then we need 
+// to check if the string is balanced or not and if it is balanced 
+//we need to print it
+
+
+
+
+
+
+
+
+
+
